@@ -1,6 +1,11 @@
+*{
+  cursor: none;
+}
+
 .App {
   text-align: center;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +40,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cursor{
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
 }
