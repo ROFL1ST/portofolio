@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Logo from "../assets/images/Logo.png";
 export default function Navbar({
   setCursorColor,
@@ -9,7 +8,7 @@ export default function Navbar({
 }) {
   return (
     <>
-      <div className="flex justify-between w-full p-8 items-center text-white">
+      <div className="flex justify-between w-full py-8 px-10 items-center text-white">
         <img
           onMouseEnter={() => {
             textEnter();
@@ -24,16 +23,60 @@ export default function Navbar({
           className="w-1/12  hover:-translate-y-1 ease-in-out transition hover:scale-110"
         />
         <ul className="flex gap-x-5 font-bold">
-          <li className=" hover:-translate-y-1 ease-in-out transition hover:scale-110">
+          <li
+            onMouseEnter={() => {
+              socialEnter();
+
+              setCursorColor("#000000");
+            }}
+            onMouseLeave={() => {
+              textLeave();
+              setCursorColor("#FFD700");
+            }}
+            className=" hover:-translate-y-1 ease-in-out transition hover:scale-110"
+          >
             Home
           </li>
-          <li className=" hover:-translate-y-1 ease-in-out transition hover:scale-110">
+          <li
+            onMouseEnter={() => {
+              socialEnter();
+
+              setCursorColor("#000000");
+            }}
+            onMouseLeave={() => {
+              textLeave()
+              setCursorColor("#FFD700");
+            }}
+            className=" hover:-translate-y-1 ease-in-out transition hover:scale-110"
+          >
             <a href="#about">About Me</a>
           </li>
-          <li className=" hover:-translate-y-1 ease-in-out transition hover:scale-110">
+          <li
+            onMouseEnter={() => {
+              socialEnter();
+
+              setCursorColor("#000000");
+            }}
+            onMouseLeave={() => {
+              textLeave()
+              setCursorColor("#FFD700");
+            }}
+            className=" hover:-translate-y-1 ease-in-out transition hover:scale-110"
+          >
             Portofolio
           </li>
-          <li className=" hover:-translate-y-1 ease-in-out transition hover:scale-110">
+          <li
+            onMouseEnter={() => {
+              socialEnter();
+
+              setCursorColor("#000000");
+            }}
+            onMouseLeave={() => {
+              textLeave()
+              setCursorColor("#FFD700");
+            }}
+            className=" hover:-translate-y-1 ease-in-out transition hover:scale-110"
+          >
             Contact Me
           </li>
         </ul>
@@ -42,12 +85,10 @@ export default function Navbar({
             onMouseEnter={() => {
               socialEnter();
               setCursorColor("#000000");
-
             }}
             onMouseLeave={() => {
               textLeave();
               setCursorColor("#FFD700");
-
             }}
             className=" hover:-translate-y-1 ease-in-out transition hover:scale-110"
           >
@@ -69,12 +110,10 @@ export default function Navbar({
             onMouseEnter={() => {
               socialEnter();
               setCursorColor("#000000");
-
             }}
             onMouseLeave={() => {
               textLeave();
               setCursorColor("#FFD700");
-
             }}
             className=" hover:-translate-y-1 ease-in-out transition hover:scale-110"
           >
@@ -93,15 +132,13 @@ export default function Navbar({
             </svg>
           </li>
           <li
-             onMouseEnter={() => {
+            onMouseEnter={() => {
               socialEnter();
               setCursorColor("#000000");
-
             }}
             onMouseLeave={() => {
               textLeave();
               setCursorColor("#FFD700");
-
             }}
             className=" hover:-translate-y-1 ease-in-out transition hover:scale-110"
           >
@@ -123,12 +160,10 @@ export default function Navbar({
             onMouseEnter={() => {
               socialEnter();
               setCursorColor("#000000");
-
             }}
             onMouseLeave={() => {
               textLeave();
               setCursorColor("#FFD700");
-
             }}
             className=" hover:-translate-y-1 ease-in-out transition hover:scale-110"
           >

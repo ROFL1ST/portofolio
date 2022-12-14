@@ -2,14 +2,11 @@ import "./App.css";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./component/navbar";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import React from "react";
-import gsap from "gsap";
 
 function App() {
-  
-
-
+  const { scrollYProgress } = useScroll();
   const [mousePosition, setMousePosition] = React.useState({
     x: 0,
     y: 0,
@@ -54,9 +51,11 @@ function App() {
   const socialEnter = () => setVariantCursor("social");
 
   const textLeave = () => setVariantCursor("default");
-  
+
   return (
     <>
+    
+      <motion.div style={{ scaleX: scrollYProgress }}  className="progress-bar" />
       <motion.div
         animate={variantCursor}
         variants={variants}
