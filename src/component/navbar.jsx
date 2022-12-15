@@ -20,9 +20,9 @@ export default function Navbar({
           }}
           src={Logo}
           alt=""
-          className="w-1/12  hover:-translate-y-1 ease-in-out transition hover:scale-110"
+          className="w-1/12 z-20  hover:-translate-y-1 ease-in-out transition hover:scale-110"
         />
-        <ul className="flex gap-x-5 font-bold">
+        <ul className="flex z-20 gap-x-5 font-bold">
           <li
             onMouseEnter={() => {
               socialEnter();
@@ -80,7 +80,7 @@ export default function Navbar({
             Contact Me
           </li>
         </ul>
-        <ul className="flex gap-x-5 ">
+        <ul className="flex gap-x-5 z-20 ">
           <li
             onMouseEnter={() => {
               socialEnter();
