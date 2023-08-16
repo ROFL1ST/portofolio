@@ -3,6 +3,7 @@ import { Parallax } from "react-parallax";
 import laptop from "../../assets/json/63487-programming-computer.json";
 import bg from "../../assets/images/daniel-leone-g30P1zcOzXo-unsplash.jpg";
 import About from "../component/about";
+import Project from "../component/project";
 export default function Home({
   textEnter,
   textLeave,
@@ -80,6 +81,10 @@ export default function Home({
       {/* About Me */}
       <About></About>
       {/* About Me */}
+      {/* Project */}
+      <Project></Project>
+
+      {/* Project */}
     </>
   );
 }
