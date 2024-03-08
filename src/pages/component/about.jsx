@@ -3,7 +3,12 @@ import React from "react";
 import { Parallax } from "react-parallax";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/solid";
 import data from "../../assets/json/experience.json";
-export default function About() {
+export default function About({
+  setCursorColor,
+  textEnter,
+  textLeave,
+  logoEnter,
+}) {
   return (
     <>
       <Parallax strength={300}>
@@ -44,16 +49,25 @@ export default function About() {
               </div>
               <div className=" w-1/3">
                 <h1 className="text-white font-semibold text-2xl">Skills</h1>
-                <div className="grid grid-cols-4  gap-5 mt-10">
+                <div className="grid grid-cols-4 relative gap-5 mt-10 ">
                   <div className="flex flex-col items-center justify-center">
-                    <div className="kotak1 p-5 rounded-2xl bg-[#080E14] flex justify-center items-center">
+                    <div className="kotak1 p-5 rounded-2xl bg-[#080E14]  flex justify-center items-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="1em"
                         height="1em"
                         preserveAspectRatio="xMidYMid meet"
-                        className="w-14 h-14 font-bold"
+                        className="w-14 h-14 font-bold z-20"
                         viewBox="0 0 32 32"
+                        onMouseEnter={() => {
+                          logoEnter();
+            
+                          setCursorColor("#000000");
+                        }}
+                        onMouseLeave={() => {
+                          textLeave();
+                          setCursorColor("#FFD700");
+                        }}
                       >
                         <circle cx="16" cy="15.974" r="2.5" fill="#00d8ff" />
                         <path
@@ -81,8 +95,17 @@ export default function About() {
                         width="1em"
                         height="1em"
                         preserveAspectRatio="xMidYMid meet"
-                        className="w-14 h-14 font-bold"
+                        className="w-14 h-14 font-bold z-20"
                         viewBox="0 0 32 32"
+                        onMouseEnter={() => {
+                          logoEnter();
+            
+                          setCursorColor("#000000");
+                        }}
+                        onMouseLeave={() => {
+                          textLeave();
+                          setCursorColor("#FFD700");
+                        }}
                       >
                         <circle cx="16" cy="15.974" r="2.5" fill="#00d8ff" />
                         <path
@@ -109,9 +132,18 @@ export default function About() {
                         xmlns="http://www.w3.org/2000/svg"
                         width="1em"
                         height="1em"
-                        className="w-14 h-14 font-bold"
+                        className="w-14 h-14 font-bold z-20"
                         preserveAspectRatio="xMidYMid meet"
                         viewBox="0 0 32 32"
+                        onMouseEnter={() => {
+                          logoEnter();
+            
+                          setCursorColor("#000000");
+                        }}
+                        onMouseLeave={() => {
+                          textLeave();
+                          setCursorColor("#FFD700");
+                        }}
                       >
                         <path
                           fill="#40d0fd"
@@ -145,9 +177,18 @@ export default function About() {
                         xmlns="http://www.w3.org/2000/svg"
                         width="1em"
                         height="1em"
-                        className="w-14 h-14 font-bold text-[#56954f]"
+                        className="w-14 h-14 font-bold text-[#56954f] z-20"
                         preserveAspectRatio="xMidYMid meet"
                         viewBox="0 0 24 24"
+                        onMouseEnter={() => {
+                          logoEnter();
+            
+                          setCursorColor("#000000");
+                        }}
+                        onMouseLeave={() => {
+                          textLeave();
+                          setCursorColor("#FFD700");
+                        }}
                       >
                         <path
                           fill="currentColor"
@@ -165,9 +206,18 @@ export default function About() {
                         xmlns="http://www.w3.org/2000/svg"
                         width="1.03em"
                         height="1em"
-                        className="w-14 h-14 font-bold"
+                        className="w-14 h-14 font-bold z-20"
                         preserveAspectRatio="xMidYMid meet"
                         viewBox="0 0 256 250"
+                        onMouseEnter={() => {
+                          logoEnter();
+            
+                          setCursorColor("#000000");
+                        }}
+                        onMouseLeave={() => {
+                          textLeave();
+                          setCursorColor("#FFD700");
+                        }}
                       >
                         <path
                           fill="#00005B"
@@ -190,8 +240,17 @@ export default function About() {
                         width="0.67em"
                         height="1em"
                         preserveAspectRatio="xMidYMid meet"
-                        className="w-14 h-14 font-bold"
+                        className="w-14 h-14 font-bold z-20"
                         viewBox="0 0 256 384"
+                        onMouseEnter={() => {
+                          logoEnter();
+            
+                          setCursorColor("#000000");
+                        }}
+                        onMouseLeave={() => {
+                          textLeave();
+                          setCursorColor("#FFD700");
+                        }}
                       >
                         <path
                           fill="#0ACF83"

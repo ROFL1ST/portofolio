@@ -6,6 +6,7 @@ import About from "../component/about";
 import Project from "../component/project";
 export default function Home({
   textEnter,
+  logoEnter,
   textLeave,
   setCursorColor,
   socialEnter,
@@ -79,7 +80,12 @@ export default function Home({
         </div>
       </Parallax>
       {/* About Me */}
-      <About></About>
+      <About
+        setCursorColor={setCursorColor}
+        textEnter={textEnter}
+        textLeave={textLeave}
+        logoEnter={logoEnter}
+      ></About>
       {/* About Me */}
       {/* Project */}
       <Project></Project>

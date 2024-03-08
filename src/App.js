@@ -39,6 +39,12 @@ function App() {
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
     },
+    logo: {
+      height: 100,
+      width: 100,
+      x: mousePosition.x - 55,
+      y: mousePosition.y - 55,
+    },
     social: {
       height: 70,
       width: 70,
@@ -48,14 +54,17 @@ function App() {
   };
 
   const textEnter = () => setVariantCursor("text");
+  const logoEnter = () => setVariantCursor("logo");
   const socialEnter = () => setVariantCursor("social");
 
   const textLeave = () => setVariantCursor("default");
 
   return (
     <>
-    
-      <motion.div style={{ scaleX: scrollYProgress }}  className="progress-bar" />
+      <motion.div
+        style={{ scaleX: scrollYProgress }}
+        className="progress-bar"
+      />
       <motion.div
         animate={variantCursor}
         variants={variants}
@@ -75,6 +84,7 @@ function App() {
           element={
             <Home
               textEnter={textEnter}
+              logoEnter={logoEnter}
               textLeave={textLeave}
               socialEnter={socialEnter}
               setCursorColor={setCursorColor}

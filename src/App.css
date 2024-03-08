@@ -1,11 +1,10 @@
-*{
+* {
   cursor: none;
 }
 
 .App {
   text-align: center;
 }
-
 
 .App-logo {
   height: 40vmin;
@@ -42,18 +41,17 @@
   }
 }
 
-.cursor{
+.cursor {
   height: 32px;
   width: 32px;
   border-radius: 50%;
   position: fixed;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.background-cover{
+.background-cover {
   background-size: cover;
 }
